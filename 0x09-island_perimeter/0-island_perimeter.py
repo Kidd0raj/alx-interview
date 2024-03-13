@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+"""
+This module provides a function to calculate the perimeter of an island represented by a grid.
+"""
 
 def island_perimeter(grid):
     """
@@ -28,3 +31,12 @@ def island_perimeter(grid):
                     perimeter -= 2  # Subtract shared edge
     
     return perimeter
+
+if __name__ == "__main__":
+    grid = [
+        [0, 1, 0, 0],
+        [1, 1, 1, 0],
+        [0, 1, 0, 0],
+        [1, 1, 0, 0]
+    ]
+    print(island_perimeter(grid))
