@@ -1,5 +1,25 @@
 #!/usr/bin/python3
+
 def island_perimeter(grid):
+    """
+    Calculate the perimeter of an island represented by a grid.
+
+    Args:
+        grid (List[List[int]]): A 2D grid representing the island, where 1s represent land and 0s represent water.
+
+    Returns:
+        int: The perimeter of the island.
+
+    Example:
+        >>> grid = [
+        ...     [0, 1, 0, 0],
+        ...     [1, 1, 1, 0],
+        ...     [0, 1, 0, 0],
+        ...     [1, 1, 0, 0]
+        ... ]
+        >>> island_perimeter(grid)
+        16
+    """
     if not grid:
         return 0
     
