@@ -1,7 +1,9 @@
 #!/usr/bin/python3
-
+"""
+prime game 
+"""
 def is_prime(num):
-    """Check if a number is prime."""
+    """ Check if a number is prime."""
     if num < 2:
         return False
     for i in range(2, int(num ** 0.5) + 1):
@@ -10,13 +12,13 @@ def is_prime(num):
     return True
 
 def optimal_move(nums):
-    """Find the optimal move for a player."""
+    """ Find the optimal move for a player."""
     for i in range(len(nums)):
         if is_prime(nums[i]):
             return nums[i]
 
 def isWinner(x, nums):
-    """Determine the winner of the game."""
+    """ Determine the winner of the game."""
     maria_wins = 0
     ben_wins = 0
     
